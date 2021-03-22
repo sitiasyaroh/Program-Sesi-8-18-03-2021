@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 - Siti Asyaroh</title>
+</head>
+<body>
+    <div>
+        <label>Create Tweet : </label>
+        <br>
+        <textarea cols="40" rows="5" name="Tweet" id="Tweet"></textarea>
+    </div>
+    <br>
+    <button onclick="SubmitForm()">Submit</button>
+
+    <script type="text/javascript">
+        SubmitForm = () => {
+            console.log(document.getElementById('Tweet').value)
+
+            for(let i = 0; i < Tweet.length; i++) {
+            document.write(`<li>${ Tweet [i]}</li>`);
+            }
+        }
+    </script>
+</body>
+</html>

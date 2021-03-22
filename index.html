@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise JavaScript DOM - Siti Asyaroh</title>
+</head>
+<body>
+    <h2>FORM CONTACT US</h2>
+    <div class="form">
+    <div>
+        <label>Nama : </label>
+        <input type="text" name="Nama" id="Nama">
+    </div>
+    <br>
+    <div>
+        <label>No. Hp : </label>
+        <input type="text" name="No. Hp" id="No. Hp">
+    </div>
+    <br>
+    <div>
+        <label>Email : </label>
+        <input type="text" name="Email" id="Email">
+    </div>
+    <br>
+    <div>
+        <label>Alamat : </label>
+        <textarea cols="40" rows="5" name="Alamat" id="Alamat"></textarea>
+    </div>
+    <br>
+    <button onclick="SubmitForm()">Submit</button>
+    </div>
+    <script type="text/javascript">
+        SubmitForm = () => {
+            console.log(document.getElementById('Nama').value)
+            console.log(document.getElementById('No. Hp').value)
+            console.log(document.getElementById('Email').value)
+            console.log(document.getElementById('Alamat').value)
+        }
+    </script>
+</body>
+</html>

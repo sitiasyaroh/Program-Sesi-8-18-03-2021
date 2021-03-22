@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6 - Siti Asyaroh</title>
+</head>
+<body>
+    <form method="get" id="login" onsubmit=" return validasi()">
+        <h2>FORM LOGIN</h2>
+        Username : <input type="text" name="username" placeholder="Username"> <br>
+        <br>
+        Password : <input type="password" name="password" placeholder="Password"> <br>
+        <br>
+        <input class="login" type="submit" name="submit" value="Login">
+    </form>
+
+    <script type="text/javascript">
+      function validasi(){
+        var username = document.forms["login"]["username"].value;
+        var password = document.forms["login"]["password"].value;
+        if( username == "asyaroh" && password == "12345678"){
+          return true;
+        }
+        else if(username =="" || password ==""){
+          alert("Data Tidak Boleh Kosong!");
+          return false;
+        }
+        else{
+          alert("Username atau Password yang Anda masukan SALAH");
+          return false;
+        }
+      }
+    </script>
+</body>
+</html>
